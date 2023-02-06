@@ -1,36 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
-    <link rel="stylesheet" href="css/login.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+    <title>Sign in/ Sign up</title>
+    <link href="/css/login.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="/imagenes/book.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div id="central">
-        <div id="login">
-            <div class="titulo">
-                BookUniverse
-            </div>
-            <form id="loginform">
-                <input type="text" name="usuario" placeholder="Usuario" required> <br>
-                
-                <input type="password" placeholder="Contraseña" name="password" required> <br>
-                
-                <button type="submit" title="Ingresar" name="Ingresar">Login</button>
-            </form>
-            <div class="pie-form">
-                <a href="#">¿Perdiste tu contraseña?</a> <br>
-                <a href="#">¿No tienes Cuenta? Registrate</a>
-            </div>
-        </div>
-        <div class="inferior">
-            <a href="#">Volver</a>
-        </div>
-    </div>
+
+<div class="container">
+	<div class="login-html">
+		<h1>BookUniverse </h1>
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<div class="group">
+					<label for="user" class="label">Username  <i class='bx bx-user' style='color:rgb(110, 108, 108);'  ></i></label>
+					<input id="user" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password  <i class='bx bxs-key' style='color:rgb(110, 108, 108);'  ></i></label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span> Keep me Signed in</label>
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Sign In">
+				</div>
+				<div id="login2">
+					<button> <i class='bx bxl-google bx-tada' style='color:#566a85'></i>Log in with Google</button>
+				</div> <br>
+				<div id="login2">
+					<button> <i class='bx bxl-facebook-circle bx-tada' style='color:#566a85' ></i> Log in with FaceBook </button>
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="#forgot">Forgot Password?</a>
+				</div>
+			</div>
+			<div class="sign-up-htm">
+				<div class="group">
+					<label for="user" class="label">Username <i class='bx bx-user' style='color:rgb(110, 108, 108);'  ></i></label>
+					<input id="user" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password <i class='bx bxs-key' style='color:rgb(110, 108, 108);'  ></i></label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Repeat Password<i class='bx bxs-key' style='color:rgb(110, 108, 108);'  ></i></label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Email Address <i class='bx bxs-envelope' style='color:rgb(110, 108, 108)'  ></i></label>
+					<input id="pass" type="text" class="input">
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Sign Up">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<label for="tab-1">Already Member?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 </body>
 </html>
-

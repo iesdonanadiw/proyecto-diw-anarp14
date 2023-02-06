@@ -1,12 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
-</head>
-<body>
-    
-</body>
+    <link rel="icon" type="image/png" href="/imagenes/book.png" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="contenedor">
+    <header class="header">
+      <div class="logo">
+        <a href=""><img src="imagenes/logo.png" alt="Logo de la marca" /></a>
+        <h1 class="nombre-empresa">BookUniverse</h1>
+      </div>
+        <nav class="nav-menu">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="menu-icon"><img src="imagenes/menu.svg" alt="" /></i>
+        </label>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="my_library.html">My library</a></li>
+          <li>
+            <a href="#">Community</a>
+            <ul class="submenu">
+              <li><a href="community-friends.html">Friends and Followers</a></li>
+              <li><a href="recommendations.html">Recommendations</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.html">About us</a></li>
+          <li><a href="contact-us.html">Contact us</a></li>
+          <li><a class="btn" href="login.html">Sign in/Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="buscador">
+        <form>
+          <input type="search" placeholder="Buscar" size="40" />
+          <button type="submit">Let's go</button>
+        </form>
+      </div>
+      <div id="central">
+        <h3>Updates</h3>
+        <div id="interior">
+          <div class="titulo">
+          <img src="imagenes/usuario1.png" alt="Perfil usuario" ><span><h4>Ana's Blog</h4>made progress on El lunes nos querrán</span>
+          </div>
+          <p class="libro">
+            <img src="imagenes/libro3.jpg" alt="Libro" >
+            <button type="submit">Want to read</button> <br>
+            <p class="descripcion">Cuenta la historia de una joven de diecisiete años que desea encontrar la libertad para descubrir qué es lo que la hará feliz.</p>
+          </p>
+        </div>
+        <div id="interior">
+          <div class="titulo">
+          <img src="imagenes/usuario2.png" alt="Perfil usuario"><span><h4>Anxo Ma</h4>rated a book</span>
+        </p>
+        </div>
+          <p class="libro">
+            <img src="imagenes/libro4.jpg" alt="Libro" >
+            <button type="submit">Want to read</button> <br>
+            <p class="descripcion">In his New York Times bestselling memoir, A Work in Progress, Connor Franta shared his journey from small-town Midwestern boy to full-fledged Internet sensation...</p>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+          <div class="footer-content-container">
+              <h1 class="website-logo">BookUniverse</h1>
+              <img src="imagenes/logo.png" alt="">
+          </div>
+          <div class="footer-menus">
+              <div class="footer-content-container">
+                  <span class="menu-title">company</span>
+                  <a href="index.html" class="menu-item-footer">Home</a>
+                  <a href="about-us.html" class="menu-item-footer">About us</a>
+                  <a href="" class="menu-item-footer">Work with us</a>
+              </div>
+              <div class="footer-content-container">
+                  <span class="menu-title">legal</span>
+                  <a href="" class="menu-item-footer">Privacy Policy</a>
+                  <a href="" class="menu-item-footer">Cookies</a>
+                  <a href="" class="menu-item-footer">Legal Advice</a>
+              </div>
+          </div>
+
+          <div class="footer-content-container">
+              <span class="menu-title">follow us</span>
+              <div class="social-container">
+                <a href="#"><i class='bx bxl-facebook-circle' style='color:#313030'></i> </a>
+                <a href="#"><i class='bx bxl-twitter' style='color:#313030'  ></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square' style='color:#313030'  ></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' style='color:#313030'  ></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="copyright-container">
+          <span class="copyright">Copyright 2023, BookUniverse. All rights reserved.</span>
+      </div>
+  </footer>
+</div>
+  </body>
 </html>

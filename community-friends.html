@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Community-Friends and Followers</title>
+    <link rel="stylesheet" href="css/community-friends.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href=""><img src="imagenes/logo.png" alt="Logo de la empresa" /></a>
+        <h1 class="nombre-empresa">BookUniverse</h1>
+      </div>
+      <nav class="nav-menu">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="menu-icon"><img src="imagenes/menu.svg" alt="" /></i>
+        </label>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="my_library.html">My library</a></li>
+          <li>
+            <a href="#">Community</a>
+            <ul class="submenu">
+              <li><a href="community-friends.html">Friends and Followers</a></li>
+              <li><a href="recommendations.html">Recommendations</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.html">About us</a></li>
+          <li><a href="contact-us.html">Contact us</a></li>
+          <li><a class="btn" href="login.html">Sign in/Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="seccion">
+        <h3>Community - Friends and Followers</h3>
+      </div>
+    <div id="buscador">
+      <form>
+        <input type="search" placeholder="Search and add new friends" size="40" />
+        <button type="submit">Search</button>
+      </form>
+      <div id="resumen">
+        <p>
+          <a href="#"> Friends</a> <br>
+          <a href="#"> Following</a> <br>
+          <a href="#"> Followers</a> <br>
+          <a href="#"> All</a> <br>
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="interno">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>usuario</th>
+            <th>Lectura actual</th>
+            <th>Autor/a</th>
+            <th>Estado</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="usuario"><img src="/imagenes/usuario1.png"> <br> anarp96</td>
+            <td data-label="lectura-actual">Trono de cristal</td>
+            <td data-label="autor">Sarah J. Maas</td>
+            <td data-label="estado">45%</td>
+            <td data-label="editar-borrar">
+              <button type="button">Add as a friend</button> <br>
+              <button type="button">Follow</button>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="usuario"><img src="/imagenes/usuario2.png"><br> paquito.booker</td>
+            <td data-label="lectura-actual">Los siete maridos de Evelyn Hugo</td>
+            <td data-label="autor">Taylor Jenkins Reid</td>
+            <td data-label="estado">Sarah J. Maas</td>
+            <td data-label="editar-borrar">
+              <button type="button">Add as a friend</button> <br>
+              <button type="button">Follow</button>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="portada"><img src="/imagenes/usuario3.png"><br> lolita_lola</td>
+            <td data-label="lectura-actual">Trono de cristal</td>
+            <td data-label="autor">Taylor Jenkins Reid</td>
+            <td data-label="estado">Sarah J. Maas</td>
+            <td data-label="editar-borrar">
+              <button type="button">Add as a friend</button> <br>
+              <button type="button">Follow</button>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="portada"><img src="/imagenes/usuario4.png"><br> lolita_lola</td>
+            <td data-label="lectura-actual">Trono de cristal</td>
+            <td data-label="autor">Taylor Jenkins Reid</td>
+            <td data-label="estado">Sarah J. Maas</td>
+            <td data-label="editar-borrar">
+              <button type="button">Add as a friend</button> <br>
+              <button type="button">Follow</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    </div>
+  </main>
+    <footer>
+      <div class="footer-container">
+          <div class="footer-content-container">
+              <h1 class="website-logo">BookUniverse</h1>
+              <img src="imagenes/logo.png" alt="">
+          </div>
+          <div class="footer-menus">
+              <div class="footer-content-container">
+                  <span class="menu-title">company</span>
+                  <a href="index.html" class="menu-item-footer">Home</a>
+                  <a href="about-us.html" class="menu-item-footer">About us</a>
+                  <a href="" class="menu-item-footer">Work with us</a>
+              </div>
+              <div class="footer-content-container">
+                  <span class="menu-title">legal</span>
+                  <a href="" class="menu-item-footer">Privacy Policy</a>
+                  <a href="" class="menu-item-footer">Cookies</a>
+                  <a href="" class="menu-item-footer">Legal Advice</a>
+              </div>
+          </div>
+
+          <div class="footer-content-container">
+              <span class="menu-title">follow us</span>
+              <div class="social-container">
+                <a href="#"><i class='bx bxl-facebook-circle' style='color:#313030'></i> </a>
+                <a href="#"><i class='bx bxl-twitter' style='color:#313030'  ></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square' style='color:#313030'  ></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' style='color:#313030'  ></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="copyright-container">
+          <span class="copyright">Copyright 2023, BookUniverse. All rights reserved.</span>
+      </div>
+  </footer>
+  </body>
+</html>
