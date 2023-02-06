@@ -190,7 +190,7 @@ nav ul li:hover ul {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
     width: 55%;
-    height: 60vh;
+    height: 75vh;
     margin: auto;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
@@ -204,7 +204,7 @@ nav ul li:hover ul {
   #interior {
     background: rgba(210, 223, 211, 0.8);
     width: 45%;
-    height: 55vh;
+    height: 65vh;
     margin: auto;
     margin-top: 25px;
     border-radius: 10px;
@@ -225,6 +225,7 @@ nav ul li:hover ul {
   .datos-contacto{
     background: rgba(210, 223, 211, 0.8);
     width: 45%;
+    height: 20vh;
     border-radius: 10px;
     margin: 0 24px 20px;
     text-align: center;
@@ -255,15 +256,33 @@ nav ul li:hover ul {
     margin-left: 1.5625rem;
   }
 
-  @media (max-width: 767px) {
+  @media (min-width: 768px) and (max-width: 991px){
+    #central {
+      width: 60%;
+    }
+    #interior {
+      width: 50%;
+    }
+    #izquierda img {
+      width: 40%;
+    }
+    .datos-contacto {
+      width: 40%;
+    }
+    .group{
+      width: 60%;
+    }
+  }
+
+
+  @media (max-width: 768px) {
     #central {
       width: 75%;
       height: auto;
     }
     #interior {
-      width: 70%;
-      height: auto;
-      margin: 20px auto;
+      width: 90%;
+      margin-right: 30px;
     }
     #izquierda img {
       width: 80%;
@@ -271,9 +290,12 @@ nav ul li:hover ul {
     .datos-contacto {
       width: 70%;
     }
-
     .group{
       width: 80%;
+    }
+
+    .group .input, textarea{
+      margin-right: 40px;
     }
 
   }
@@ -299,8 +321,12 @@ nav ul li:hover ul {
       margin-bottom: 1em;
     }
 
+    .group{
+      margin-bottom: 1em;
+    }
+
     #izquierda{
-      margin-left: 3.75rem;
+      margin-left: 2.5rem;
     }
 
     .group .input, textarea{
@@ -310,21 +336,6 @@ nav ul li:hover ul {
 
   }
 
-  @media (max-width: 359px) {
-    #central {
-      width: 80%;
-    }
-    #interior {
-      width: 70%;
-    }
-    #izquierda img {
-      width: 50%;
-    }
-    .datos-contacto {
-      width: 50%;
-    }
-
-  }
 
 
 

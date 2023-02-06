@@ -185,6 +185,7 @@ nav ul li:hover ul {
 
 /* CONTENIDO */
 
+
 #buscador,
 h3 {
   text-align: center;
@@ -283,19 +284,80 @@ button {
 #izquierda {
   position: absolute;
   width: 300px;
-  height: 340px;
-  left: 52px;
+  height: 380px;
+  left: 80px;
   top: 125px;
   background: #91bfba;
   border-radius: 6px;
 }
 #izquierda img {
-  text-align: center;
+  display: block;
+  margin: 0 auto;
   border-radius: 4px;
-  width: 158px;
-  height: 232px;
-  left: 140px;
-  top: 162px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 80%;
+  justify-content: center;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-left: 30px;
+  overflow: hidden;
+
+}
+
+.progress-value {
+  height: 100%;
+  background-color: #884559;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  position: relative;
+}
+
+#izquierda .button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: whitesmoke;
+  color: #550D0E;
+  border-radius: 20px;
+  font-size: 1em;
+  line-height: 5px;
+}
+
+#calendar-container {
+  position: absolute;
+  width: 300px;
+  height: 275px;
+  left: 80px;
+  top: 500px;
+  background-color: #ddd;
+  border-radius: 25px;
+  margin-top: 40px; /* ajusta esta propiedad para controlar la distancia entre ambos contenedores */
+  display: flex;
+  justify-content: center;
+}
+
+#calendar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #550D0E;
+}
+
+#derecha{
+  position: absolute;
+  height: 257px;
+  width: 207px;
+  left: 1167px;
+  top: 199px;
 }
 
 /* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
@@ -312,60 +374,6 @@ button {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-#calendario {
-  box-sizing: border-box;
-  position: absolute;
-  width: 328px;
-  height: 310px;
-  left: 32px;
-  top: 574px;
-  background: radial-gradient(
-      107.17% 107.17% at 0% 0%,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(255, 255, 255, 0) 100%
-    )
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  backdrop-filter: blur(21px);
-  border-radius: 40px;
-  text-align: center;
-}
-#calendario h3 {
-  color: #502020;
-}
-
-.tabla1 {
-  margin-top: 1em;
-}
-
-.tabla1 th,
-.tabla1 td {
-  text-align: center;
-  padding: 0.2em 0.5em;
-}
-
-.tabla1 caption {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 20px;
-  margin-bottom: 0.5em;
-}
-
-.tabla1 tr {
-  border-bottom: 1px solid black;
-}
-
-#derecho {
-  position: absolute;
-  width: 207px;
-  height: 200px;
-  right: 180px;
-  top: 200px;
-}
-
-#derecho img {
-  width: 260px;
-  border-radius: 10px;
-}
 
 /*Aquí debajo va el FOOTER*/
 
