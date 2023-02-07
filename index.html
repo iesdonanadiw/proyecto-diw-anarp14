@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
-    <link rel="icon" type="image/png" href="/imagenes/book.png" />
+    <link rel="icon" type="image/png" href="./imagenes/book.png" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link href="/css/index.css" rel="stylesheet" type="text/css" />
+    <link href="./css/index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="contenedor">
@@ -49,25 +49,27 @@
         <h3>Updates</h3>
         <div id="interior">
           <div class="titulo">
-          <img src="imagenes/usuario1.png" alt="Perfil usuario" ><span><h4>Ana's Blog</h4>made progress on El lunes nos querrán</span>
+          <img src="imagenes/usuario1.png" alt="Perfil usuario" ><span><strong>Ana's Blog</strong> made progress on <p style="text-decoration: underline;">El lunes nos querrán - Najat El Hachmi.</p></span>
           </div>
-          <p class="libro">
-            <img src="imagenes/libro3.jpg" alt="Libro" >
+          <div class="libro">
             <button type="submit">Want to read</button> <br>
-            <p class="descripcion">Cuenta la historia de una joven de diecisiete años que desea encontrar la libertad para descubrir qué es lo que la hará feliz.</p>
-          </p>
+            <p class="descripcion">Cuenta la historia de una joven de diecisiete años que desea encontrar la libertad para descubrir qué es lo que la hará feliz. <img src="imagenes/libro3.jpg" alt="Libro" ></p>
+            <div class="enlaces">
+            <a href="#">Like</a> <a href="#">Comment</a>
+          </div>
+          </div>
         </div>
         <div id="interior">
           <div class="titulo">
-          <img src="imagenes/usuario2.png" alt="Perfil usuario"><span><h4>Anxo Ma</h4>rated a book</span>
-        </p>
-        </div>
-          <p class="libro">
-            <img src="imagenes/libro4.jpg" alt="Libro" >
+          <img src="imagenes/usuario2.png" alt="Perfil usuario" ><span><strong>Pepito</strong> rated a book <img src="imagenes/puntuacion.png" alt="Puntuación lectura"> <p style="text-decoration: underline;">Note to self - Connor Franta.</p></span>
+          </div>
+          <div class="libro">
             <button type="submit">Want to read</button> <br>
-            <p class="descripcion">In his New York Times bestselling memoir, A Work in Progress, Connor Franta shared his journey from small-town Midwestern boy to full-fledged Internet sensation...</p>
-          </p>
-        </div>
+            <p class="descripcion">In his New York Times bestselling memoir, A Work in Progress, Connor Franta shared his journey from small-town Midwestern boy to full-fledged Internet sensation... <img src="imagenes/libro4.jpg" alt="Libro" ></p>
+            <div class="enlaces">
+            <a href="#">Like</a>  <a href="#">Comment</a>
+          </div>
+          </div>
       </div>
       <div id="izquierda">
         <h3>Currendly reading</h3>
@@ -78,7 +80,8 @@
         <button type="button" class="button">Update</button>
       </div>
       <div id="calendar-container">
-        <div id="calendar-title">Calendario</div>
+        <div id="calendar-title">Upcoming Book Releases 2023
+        </div>
         <img src="/imagenes/calendario.png" alt="Calendar">
       </div>
 
