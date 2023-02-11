@@ -45,7 +45,7 @@ header {
   position: relative;
 }
 
-header h1 {
+h1 {
   color: #550d0e;
   font-size: 2rem;
   -webkit-box-sizing: border-box;
@@ -70,7 +70,7 @@ h1:hover {
 }
 
 .logo img {
-  height: 3.75rem;
+  width: 4.75rem;
   transition: all 0.3s;
 }
 
@@ -78,16 +78,16 @@ header .logo img:hover {
   transform: scale(1.2);
 }
 
-header a,
+a,
 li {
   color: #eceff1;
 }
 
-.nav-menu li:hover {
-  background-color: #e0b6be96;
+.nav-menu a:hover {
+  color: #3e0a0b;
 }
 
-header li .btn {
+li .btn {
   font-weight: 700;
   padding: 0.25rem 0.75rem;
   background: #4c606d;
@@ -97,10 +97,6 @@ header li .btn {
   transition: all 0.3s ease 0s;
 }
 
-li:hover .btn {
-  background-color: #a8c9b1;
-  transform: scale(1.1);
-}
 .menu-icon img {
   width: 3.125rem;
   height: 3.125rem;
@@ -109,79 +105,139 @@ li:hover .btn {
 
 /* SUBMENU */
 
-.submenu {
-  width: 13.75rem;
+
+nav ul li ul {
+  width: 240px;
+  display: flex;
   flex-direction: column;
-  background-color: #c7d6cb;
+  background: #dcd8d8;
   position: absolute;
-  border-radius: 10px;
-  display: none;
-  text-align: center;
+  top: 90px;
+  padding: 14px 0px;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  z-index: 10;
+  transition: all 300ms ease;
   border: none;
+  border-radius: 5px;
 }
 
 nav ul li:hover ul {
-  display: block;
-  top: 30px;
+  visibility: visible;
+  opacity: 1;
+  top: 44px;
 }
 
-.submenu li a {
+nav ul li ul:before{
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid white;
+  position: absolute;
+  top: -12px;
+  left: 20px;
+}
+
+nav ul li ul li a{
+  display: block;
   color: #2a2a2a;
   padding: 6px;
   margin-top: 10px;
-}
-.menu li:hover .submenu {
-  color: white;
-  display: block;
+  padding-left: 14px;
+  transition: all 300ms ease;
 }
 
-.menu-icon,
-#check {
+nav ul li ul li a:hover{
+  background: #83b099;
+  transform: scale(1.2);
+  padding-left: 20px;
+  font-size: 16px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+
+/*ELEMENTOS RESPONSIVOS*/
+
+.icon__menu{
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  width: 26px;
+  height: 100%;
+  display: none;
+  align-items: center;
+  margin-left: 12rem;
+}
+
+#label__check{
+  width: 26px;
+  height: 100%;
   display: none;
 }
 
-@media (max-width: 960px) {
-  .checkbtn {
-    display: block;
-  }
-  .menu-icon {
-    display: block;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-  }
-  .nav-menu li:hover {
-    background-color: #b6e0ba96;
-  }
-  .nav-menu ul {
-    display: block;
-    position: fixed;
-    top: 70px;
-    left: -100%;
-    background: #b8a5ab;
-    width: 100%;
-    height: 100vh;
-    right: 0;
+#check__menu{
+  display: none;
+}
+
+  @media  screen and (max-width: 990px) {
+
+    #label__check{
+      display: block;
   }
 
-  .nav-menu ul li {
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    margin: 0;
+  .icon__menu{
+      display: flex;
   }
-  .nav-menu ul li:last-child {
-    background: none;
-    padding: 1rem;
-  }
-  #check:checked ~ ul {
-    left: 0;
-    transition: all 0.25s;
-  }
-  .logo {
-    margin-right: 0;
-  }
+
+    .submenu {
+      width: 200px;
+      top: 60px;
+      font-size: 18px;
+    }
+    .nav-menu li:hover {
+      background-color: #b6e0ba96;
+    }
+
+    nav > ul {
+      flex-direction: column;
+      position: fixed;
+      top: 80px;
+      left: 0;
+      background: #b8a5ab;
+      width: 100%;
+      height: 90vh;
+      z-index: 100;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    nav ul li ul{
+      right:  80px;
+      margin-top: 50px;
+    }
+
+    .nav-menu ul li {
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+    .nav-menu ul li:last-child {
+      background: none;
+    }
+
+  #check__menu:checked ~ nav > ul{
+    visibility: visible;
+    opacity: 1;
 }
+    .logo {
+      margin-right: 0;
+    }
+  }
+
 
 /* CONTENIDO */
 
@@ -235,13 +291,15 @@ button {
 
 #central {
   background-color: #b8a5ab;
-  width: 36%;
-  height: 70%;
+  width: 41%;
+  height: 60%;
+  max-height: 800px;
   border-radius: 0.625rem;
-  margin: auto;
   margin-top: 0.3125rem;
   margin-bottom: 1.25rem;
   overflow-y: scroll;
+  margin:15px auto;
+  margin-right: 27%;
 }
 
 #interior {
@@ -269,7 +327,6 @@ button {
   height: 30%;
   vertical-align: -11px;
 }
-
 
 #interior .libro {
   display: flex;
@@ -304,6 +361,7 @@ button {
   top: 125px;
   background: #91bfba;
   border-radius: 6px;
+  z-index: 1;
 }
 #izquierda img {
   display: block;
@@ -354,6 +412,7 @@ button {
   margin-top: 40px;
   display: flex;
   justify-content: center;
+
 }
 
 #calendar-title {
@@ -365,14 +424,19 @@ button {
   font-size: 18px;
   font-weight: bold;
   color: #550D0E;
+  margin-top: -7px;
 }
 
 #derecha{
   position: absolute;
   height: 80%;
-  width: 60%;
   left: 78%;
   top: 15%;
+  z-index: 1;
+}
+
+#derecha img{
+  border-radius: 10px;
 }
 
 .enlaces {
@@ -388,13 +452,13 @@ button {
   text-decoration: none;
   color:  #550D0E;
   font-size: 16px;
+  margin-bottom: 8px;
   font-weight: bold;
 }
 
-/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 14px;
 }
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -408,6 +472,7 @@ button {
 @media (max-width: 1024px) {
   #central {
     width: 44%;
+    margin-right: 25%;
   }
   #interior {
     width: 90%;
@@ -433,18 +498,18 @@ button {
   }
 
   #derecha img {
-    width: 30%;
+    width: 25%;
     left: 75%;
   }
 }
 
 @media (max-width: 768px) {
   #central {
-    width: 50%;
-    margin-right: 13%;
+    width: 55%;
+    margin-right: 5%;
   }
   #interior {
-    width: 85%;
+    width: 90%;
     font-size: 13px;
   }
   #interior .libro img {
@@ -452,13 +517,12 @@ button {
   }
   #izquierda {
     width: 27%;
-    height: 20%;
+    height: 18%;
     left: 6%;
     top: 10%;
+    font-size: 18px;
   }
-  .descripcion{
-    font-size: 16px;
-  }
+
   .descripcion img{
     width: 33%;
   }
@@ -466,20 +530,75 @@ button {
     width: 75%;
   }
   #calendar-container {
-    height:14%;
-    left: 72px;
-    top: 28%;
+    height: 17%;
+    width: 33%;
+    left: 26px;
+    top: 27%;
   }
-  #calendar-container p{
-    font-size: 12px;
+  #calendar-title{
+    font-size: 18px;
+    margin-top: -8px;
   }
+
+  #calendar-container img{
+    width: 100%;
+}
+
   #derecha {
-    top: 47%;
-    left: 9%;
+    top: 48%;
+    left: 8%;
+  }
+  #derecha img{
+    width: 40%;
+    height: 16%;
   }
 }
 
+@media only screen and (max-width: 600px) {
+  /* agrega aquí tus estilos para dispositivos móviles */
+  #central {
+    width: 60%;
+    height: auto;
+  }
+  #interior {
+    width: 90%;
+    font-size: 12px;
+  }
+  #interior .libro img {
+    width: 40%;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  #izquierda {
+    width: 30%;
+    left: 3%;
+    top: 10%;
+  }
+  #izquierda img {
+    width: 40%;
+  }
+  .progress-bar {
+    width: 60%;
+    margin-left: 5%;
+  }
+  #calendar-container {
+    width: 30%;
+    height: auto;
+    left: 3%;
+    top: 30%;
+  }
 
+  #derecha img{
+    top:30%;
+    height: 15%;
+    margin-left: 5px;
+  }
+
+  .descripcion, #interior .titulo span{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
 
 
 /*Aquí debajo va el FOOTER*/

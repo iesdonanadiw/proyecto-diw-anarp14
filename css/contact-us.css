@@ -14,6 +14,7 @@
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     min-width: 100vh;
+    position: relative;
   }
 
  /*HEADER*/
@@ -83,8 +84,8 @@ li {
   color: #eceff1;
 }
 
-.nav-menu li:hover {
-  background-color: #e0b6be96;
+.nav-menu a:hover {
+  color: #3e0a0b;
 }
 
 li .btn {
@@ -101,67 +102,117 @@ li:hover .btn {
   background-color: #a8c9b1;
   transform: scale(1.1);
 }
-.menu-icon img {
-  width: 3.125rem;
-  height: 3.125rem;
-  border-radius: 2px;
-}
 
 /* SUBMENU */
 
-.submenu {
-  width: 13.75rem;
+
+nav ul li ul {
+  width: 240px;
+  display: flex;
   flex-direction: column;
-  background-color: #c7d6cb;
+  background: #dcd8d8;
   position: absolute;
-  border-radius: 10px;
-  display: none;
-  text-align: center;
+  top: 90px;
+  padding: 14px 0px;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  z-index: 10;
+  transition: all 300ms ease;
   border: none;
+  border-radius: 5px;
 }
 
 nav ul li:hover ul {
-  display: block;
-  top: 30px;
+  visibility: visible;
+  opacity: 1;
+  top: 44px;
 }
 
-.submenu li a {
+nav ul li ul:before{
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid white;
+  position: absolute;
+  top: -12px;
+  left: 20px;
+}
+
+nav ul li ul li a{
+  display: block;
   color: #2a2a2a;
   padding: 6px;
   margin-top: 10px;
-}
-.menu li:hover .submenu {
-  color: white;
-  display: block;
+  padding-left: 14px;
+  transition: all 300ms ease;
 }
 
-.menu-icon,
-#check {
+nav ul li ul li a:hover{
+  background: #83b099;
+  transform: scale(1.2);
+  padding-left: 20px;
+  font-size: 16px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+
+/*ELEMENTOS RESPONSIVOS*/
+
+.icon__menu{
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  width: 26px;
+  height: 100%;
+  display: none;
+  align-items: center;
+  margin-left: 12rem;
+}
+
+#label__check{
+  width: 26px;
+  height: 100%;
   display: none;
 }
 
-  @media (max-width: 990px) {
-    .checkbtn {
+#check__menu{
+  display: none;
+}
+
+  @media  screen and (max-width: 990px) {
+
+    #label__check{
       display: block;
-    }
-    .menu-icon {
-      display: block;
-      top: 20px;
-      right: 20px;
-      cursor: pointer;
-    }
+  }
+
+  .icon__menu{
+      display: flex;
+      margin-left: 10rem;
+  }
     .nav-menu li:hover {
       background-color: #b6e0ba96;
     }
-    .nav-menu ul {
-      display: block;
+
+    nav > ul {
+      flex-direction: column;
       position: fixed;
-      top: 70px;
-      left: -100%;
+      top: 80px;
+      left: 0;
       background: #b8a5ab;
       width: 100%;
-      height: 100vh;
-      right: 0;
+      height: 90vh;
+      z-index: 100;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    nav ul li ul{
+      right:  80px;
+      margin-top: 50px;
+
     }
 
     .nav-menu ul li {
@@ -172,12 +223,12 @@ nav ul li:hover ul {
     }
     .nav-menu ul li:last-child {
       background: none;
-      padding: 1rem;
     }
-    #check:checked ~ ul {
-      left: 0;
-      transition: all 0.25s;
-    }
+
+  #check__menu:checked ~ nav > ul{
+    visibility: visible;
+    opacity: 1;
+}
     .logo {
       margin-right: 0;
     }
@@ -203,8 +254,8 @@ nav ul li:hover ul {
 
   #interior {
     background: rgba(210, 223, 211, 0.8);
-    width: 45%;
-    height: 65vh;
+    width: 46%;
+    height: 69vh;
     margin: auto;
     margin-top: 25px;
     border-radius: 10px;
@@ -213,21 +264,21 @@ nav ul li:hover ul {
   }
 
   #izquierda img{
-    width: 45%;
+    width: 44%;
     border-radius: 5px;
-    margin: 1.25rem 1.0625rem 1.25rem;
+    margin: 1.7rem 1.0625rem 1.5rem;
   }
 
   #izquierda p{
-    padding: 1.375rem;
+    padding: 0.5rem;
   }
 
   .datos-contacto{
     background: rgba(210, 223, 211, 0.8);
     width: 45%;
-    height: 20vh;
+    height: 16vh;
     border-radius: 10px;
-    margin: 0 24px 20px;
+    margin: 0 25px;
     text-align: center;
   }
 
@@ -272,6 +323,7 @@ nav ul li:hover ul {
     .group{
       width: 60%;
     }
+
   }
 
 
@@ -279,17 +331,21 @@ nav ul li:hover ul {
     #central {
       width: 75%;
       height: auto;
+      padding-bottom: 1em;
     }
     #interior {
       width: 90%;
-      margin-right: 30px;
+      height: 70vh;
     }
     #izquierda img {
       width: 80%;
+      margin-left:50px;
     }
     .datos-contacto {
       width: 70%;
+      margin-left: 13%;
     }
+
     .group{
       width: 80%;
     }
@@ -301,8 +357,14 @@ nav ul li:hover ul {
   }
 
   @media (max-width: 479px) {
+
+    .icon__menu{
+      margin-left: 7rem;
+    }
+
     #central {
       width: 80%;
+      height: 65vh;
       padding-bottom: 1em;
     }
     #interior {
@@ -335,8 +397,6 @@ nav ul li:hover ul {
     }
 
   }
-
-
 
 
   /*Aquí debajo va el FOOTER*/

@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us</title>
-    <link rel="icon" type="image/png" href="/imagenes/book.png" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link href="/css/contact-us.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="icon" type="image/png" href="/imagenes/book.png">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link href="./css/contact-us.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="logo">
-        <a href=""><img src="imagenes/logo.png" alt="Logo de la marca" /></a>
+        <a href="index.html"><img src="imagenes/logo.png" alt="Logo de la marca"></a>
         <h1 class="nombre-empresa">BookUniverse</h1>
       </div>
+      <input type="checkbox" id="check__menu">
+      <label for="check__menu" id="label__check">
+        <i class="fas fa-bars icon__menu"></i>
+      </label>
       <nav class="nav-menu">
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="menu-icon"><img src="imagenes/menu.svg" alt="" /></i>
-        </label>
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="my_library.html">My library</a></li>
           <li>
             <a href="#">Community</a>
             <ul class="submenu">
-              <li><a href="community-friends.html">Friends and Followers</a></li>
+              <li>
+                <a href="community-friends.html">Friends and Followers</a>
+              </li>
               <li><a href="recommendations.html">Recommendations</a></li>
             </ul>
           </li>
@@ -42,26 +42,33 @@
     <main>
       <div id="central">
         <div id="interior">
-          <h2> Contact us</h2>
+          <h2>Contact us</h2>
           <div class="group">
             <label for="name" class="label">Name: </label>
             <input id="name" type="text" class="input">
           </div>
           <div class="group">
-            <label for="Email" class="label">Email: </label>
+            <label for="email" class="label">Email: </label>
             <input id="email" type="text" class="input">
           </div>
           <div class="group">
             <label for="mensaje" class="label">Mensaje:</label>
-            <textarea rows="6" cols="40" id="mensaje" style="resize: none;"></textarea>
+            <textarea
+              rows="6"
+              cols="38"
+              id="mensaje"
+              style="resize: none"
+            ></textarea>
             <input type="submit" value="Submit" class="button">
           </div>
         </div>
         <div id="izquierda">
-          <img src="/imagenes/contact.png">
+          <img src="/imagenes/contact.png" alt="Imagen contact-us">
           <div class="datos-contacto">
-            <p><strong>Email:</strong> @BookUniverse@gmail.com <br>
-              <strong>Phone:</strong> +34622749148
+            <p>
+              <strong>Email:</strong> @BookUniverse@gmail.com <br>
+              <strong>Phone:</strong> +34622749148 <br>
+              <strong>Direction:</strong> Avd. de Huelva
             </p>
           </div>
         </div>
@@ -72,7 +79,7 @@
       <div class="footer-container">
         <div class="footer-content-container">
           <h1 class="website-logo">BookUniverse</h1>
-          <img src="imagenes/logo.png" alt="" />
+          <img src="imagenes/logo.png" alt="Imagen logo">
         </div>
         <div class="footer-menus">
           <div class="footer-content-container">

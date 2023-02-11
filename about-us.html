@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
-    <link rel="icon" type="image/png" href="/imagenes/book.png" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link href="/css/about-us.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="/imagenes/book.png">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link href="/css/about-us.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="logo">
-        <a href=""><img src="imagenes/logo.png" alt="Logo de la marca" /></a>
+        <a href=""><img src="imagenes/logo.png" alt="Logo de la marca"></a>
         <h1 class="nombre-empresa">BookUniverse</h1>
       </div>
+      <input type="checkbox" id="check__menu">
+      <label for="check__menu" id="label__check">
+        <i class="fas fa-bars icon__menu"></i>
+      </label>
       <nav class="nav-menu">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="menu-icon"><img src="imagenes/menu.svg" alt=""></i>
-        </label>
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="my_library.html">My library</a></li>
-          <li><a href="#">Community</a>
+          <li>
+            <a href="#">Community</a>
             <ul class="submenu">
-              <li><a href="community-friends.html">Friends and Followers</a></li>
+              <li>
+                <a href="community-friends.html">Friends and Followers</a>
+              </li>
               <li><a href="recommendations.html">Recommendations</a></li>
             </ul>
           </li>
@@ -44,8 +45,7 @@
         <div id="interior">
           <h2>About us</h2>
           <div id="contenido">
-            <p>
-                <img src="/imagenes/about-us.jpg">
+                <img src="/imagenes/about-us.jpg" alt="Imagen about-us">
                 <p class="texto">
                     Este proyecto nace del deseo de crear una comunidad donde los
                     apasionados de la lectura puedan compartir sus opiniones sobre
@@ -54,11 +54,9 @@
                 </p>
 
                 <p class="citas">
-                    "Adquirir el hábito de la lectura es construirse un refugio contra casi todas las miserias
-                    de la vida." (Somerset Maugham) <br> <br>
+                    "«El mundo está lleno de libros preciosos que nadie lee»." (Somerset Maugham) <br>
                     “Los libros son una incomparable magia portátil” (Stephen King).
                 </p>
-            </p>
           </div>
         </div>
       </div>
@@ -68,7 +66,7 @@
       <div class="footer-container">
         <div class="footer-content-container">
           <h1 class="website-logo">BookUniverse</h1>
-          <img src="imagenes/logo.png" alt="" />
+          <img src="imagenes/logo.png" alt="Imagen logo">
         </div>
         <div class="footer-menus">
           <div class="footer-content-container">

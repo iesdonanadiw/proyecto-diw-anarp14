@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="icon" type="image/png" href="./imagenes/book.png" />
+    <link rel="icon" type="image/png" href="/imagenes/book.png">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link href="./css/index.css" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link href="./css/index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="contenedor">
-    <header class="header">
-      <div class="logo">
-        <a href=""><img src="imagenes/logo.png" alt="Logo de la marca" /></a>
-        <h1 class="nombre-empresa">BookUniverse</h1>
-      </div>
-        <nav class="nav-menu">
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="menu-icon"><img src="imagenes/menu.svg" alt="" /></i>
+      <header>
+        <div class="logo">
+          <a href="index.html"><img src="imagenes/logo.png" alt="Logo de la marca"></a>
+          <h1 class="nombre-empresa">BookUniverse</h1>
+        </div>
+        <input type="checkbox" id="check__menu">
+        <label for="check__menu" id="label__check">
+          <i class="fas fa-bars icon__menu"></i>
         </label>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="my_library.html">My library</a></li>
-          <li>
-            <a href="#">Community</a>
-            <ul class="submenu">
-              <li><a href="community-friends.html">Friends and Followers</a></li>
-              <li><a href="recommendations.html">Recommendations</a></li>
-            </ul>
-          </li>
-          <li><a href="about-us.html">About us</a></li>
-          <li><a href="contact-us.html">Contact us</a></li>
-          <li><a class="btn" href="login.html">Sign in/Sign up</a></li>
-        </ul>
-      </nav>
-    </header>
-
+        <nav class="nav-menu">
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my_library.html">My library</a></li>
+            <li>
+              <a href="#">Community</a>
+              <ul class="submenu">
+                <li>
+                  <a href="community-friends.html">Friends and Followers</a>
+                </li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+              </ul>
+            </li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+            <li><a class="btn" href="login.html">Sign in/Sign up</a></li>
+          </ul>
+        </nav>
+      </header>
     <main>
       <div id="buscador">
         <form>
-          <input type="search" placeholder="Buscar" size="40" />
+          <input type="search" placeholder="Buscar" size="40">
           <button type="submit">Let's go</button>
         </form>
       </div>
@@ -53,36 +55,39 @@
           </div>
           <div class="libro">
             <button type="submit">Want to read</button> <br>
-            <p class="descripcion">Cuenta la historia de una joven de diecisiete años que desea encontrar la libertad para descubrir qué es lo que la hará feliz. <img src="imagenes/libro3.jpg" alt="Libro" ></p>
+            <p class="descripcion">Cuenta la historia de una joven de diecisiete años que desea encontrar la libertad para descubrir qué es lo que la hará feliz.«Entonces no lo sabíamos, pero estábamos conquistando territorios nuevos impensables para nuestras madres y ni siquiera nos dábamos cuenta.»
+              <img src="imagenes/libro3.jpg" alt="El lunes nos querrán" ></p>
             <div class="enlaces">
             <a href="#">Like</a> <a href="#">Comment</a>
-          </div>
+            </div>
           </div>
         </div>
         <div id="interior">
           <div class="titulo">
-          <img src="imagenes/usuario2.png" alt="Perfil usuario" ><span><strong>Pepito</strong> rated a book <img src="imagenes/puntuacion.png" alt="Puntuación lectura"> <p style="text-decoration: underline;">Note to self - Connor Franta.</p></span>
+            <img src="imagenes/usuario2.png" alt="Perfil usuario" ><span><strong>Pepito</strong> rated a book <img src="imagenes/puntuacion.png" alt="Puntuación lectura"> <p style="text-decoration: underline;">Note to self - Connor Franta.</p></span>
           </div>
           <div class="libro">
             <button type="submit">Want to read</button> <br>
-            <p class="descripcion">In his New York Times bestselling memoir, A Work in Progress, Connor Franta shared his journey from small-town Midwestern boy to full-fledged Internet sensation... <img src="imagenes/libro4.jpg" alt="Libro" ></p>
+            <p class="descripcion">In his New York Times bestselling memoir, A Work in Progress, Connor Franta shared his journey from small-town Midwestern boy to full-fledged Internet sensation... <img src="imagenes/libro4.jpg" alt="Note to self" ></p>
             <div class="enlaces">
             <a href="#">Like</a>  <a href="#">Comment</a>
+            </div>
           </div>
-          </div>
-      </div>
-      <div id="izquierda">
-        <h3>Currendly reading</h3>
-        <img src="/imagenes/dune.jpg" alt="Imagen">
-        <div class="progress-bar">
-          <div class="progress-value" style="width: 75%;">75%</div>
         </div>
-        <button type="button" class="button">Update</button>
       </div>
-      <div id="calendar-container">
-        <p id="calendar-title">Upcoming Book Releases 2023</p>
-        <img src="/imagenes/calendario.png" alt="Calendar">
-      </div>
+        <div id="izquierda">
+          <h3>Currendly reading</h3>
+          <img src="/imagenes/dune.jpg" alt="Imagen">
+          <div class="progress-bar">
+            <div class="progress-value" style="width: 75%;">75%</div>
+          </div>
+          <button type="button" class="button">Update</button>
+        </div>
+
+        <div id="calendar-container">
+          <h3 id="calendar-title">Upcoming Releases 2023</h3>
+          <img src="/imagenes/calendario.png" alt="calendario">
+        </div>
 
       <div id="derecha">
         <img src="/imagenes/decoracion-index.png" alt="foto libros">
@@ -123,7 +128,7 @@
       <div class="copyright-container">
           <span class="copyright">Copyright 2023, BookUniverse. All rights reserved.</span>
       </div>
-  </footer>
+    </footer>
 </div>
   </body>
 </html>
