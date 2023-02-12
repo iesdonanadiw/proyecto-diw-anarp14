@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Recommendations</title>
+    <link rel="icon" type="image/png" href="/imagenes/book.png">
     <link href="./css/recommendations.css" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <!-- bootstrap -->
@@ -13,15 +14,15 @@
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
-    />
+    >
   </head>
   <body>
     <!-- BARRA NAVEGACIÓN -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="imagenes/logo.png" alt="Logo de la marca" class="logo">
-        <h1 class="nombre-empresa m-0 pl-3">BookUniverse</h1>
+        <img src="./imagenes/logo.png" alt="Logo de la marca" class="logo">
+        <h2 class="nombre-empresa m-0 pl-3">BookUniverse</h2>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -53,7 +54,7 @@
             <a class="nav-link" href="contact-us.html">Contact us</a>
           </li>
           <li class="nav-item">
-              <li><a class="nav-link btn" href="login.html">Sign in/Sign up</a></li>
+              <a class="nav-link btn" href="login.html">Sign in/Sign up</a>
           </li>
         </ul>
       </div>
@@ -104,10 +105,10 @@
           <div class="carousel-inner">
             <div class="carousel-item active c-item">
               <img
-                src="/imagenes/chica-nieve.jpg"
+                src="./imagenes/chica-nieve.jpg"
                 class="d-block w-100 c-img"
-                alt="Slide 1"
-              />
+                alt="La chica de la nieve"
+              >
               <div class="carousel-caption top-0 mt-4">
                 <p class="mt-5 fs-3 text-uppercase">Mistery</p>
                 <button class="btn btn-secondary px-4 py-2 fs-5 mt-5">
@@ -120,10 +121,10 @@
             </div>
             <div class="carousel-item c-item">
               <img
-                src="/imagenes/crepusculo.jpg"
+                src="./imagenes/crepusculo.jpg"
                 class="d-block w-100 c-img"
-                alt="Slide 2"
-              />
+                alt="Crepusculo"
+              >
               <div class="carousel-caption top-0 mt-4">
                 <p class="text-uppercase fs-3 mt-5">Romance</p>
                 <button class="btn btn-secondary px-4 py-2 fs-5 mt-5">
@@ -136,10 +137,10 @@
             </div>
             <div class="carousel-item c-item">
               <img
-                src="/imagenes/libro1.jpg"
+                src="./imagenes/la-paciente-silenciosa.jpg"
                 class="d-block w-100 c-img"
-                alt="Slide 3"
-              />
+                alt="La paciente silenciosa"
+              >
               <div class="carousel-caption top-0 mt-4">
                 <p class="text-uppercase fs-3 mt-5">Fantasy</p>
                 <button class="btn btn-secondary px-4 py-2 fs-5 mt-5">
@@ -203,10 +204,10 @@
           <div class="carousel-inner">
             <div class="carousel-item active c-item">
               <img
-                src="/imagenes/lospilares.jpg"
+                src="./imagenes/lospilares.jpg"
                 class="d-block w-100 c-img"
-                alt="Slide 1"
-              />
+                alt="Los pilares de la tierra"
+              >
               <div class="carousel-caption top-0 mt-4">
                 <p class="mt-5 fs-3 text-uppercase">Novel</p>
                 <button class="btn btn-secondary px-4 py-2 fs-5 mt-5 b-0">
@@ -219,10 +220,10 @@
             </div>
             <div class="carousel-item c-item">
               <img
-                src="/imagenes/crepusculo.jpg"
+                src="./imagenes/crepusculo.jpg"
                 class="d-block w-100 c-img"
-                alt="Slide 2"
-              />
+                alt="Crepusculo"
+              >
               <div class="carousel-caption top-0 mt-4">
                 <p class="mt-5 fs-3 text-uppercase">science fiction</p>
                 <button class="btn btn-secondary px-4 py-2 fs-5 mt-5">
@@ -235,10 +236,10 @@
             </div>
             <div class="carousel-item c-item">
               <img
-                src="/imagenes/lavidainvisible.jpg"
+                src="./imagenes/lavidainvisible.jpg"
                 class="d-block w-100 c-img"
-                alt="Slide 3"
-              />
+                alt="La vida invisible de addie larue"
+              >
               <div class="carousel-caption top-0 mt-4">
                 <p class="text-uppercase fs-3 mt-5">thriller</p>
                 <button class="btn btn-secondary px-4 py-2 fs-5 mt-5">
@@ -274,55 +275,50 @@
   </div>
 
   <!-- Footer -->
-  <footer class="footer text-white py-4">
-    <div class="container-fluid">
-      <nav class="row d-flex justify-content-between">
-        <!-- logo -->
-        <div class="logo d-flex align-items-center col-md-3">
-          <a href="index.html" class="navbar-brand">
-            <img src="imagenes/logo.png" alt="Logo de la marca" class="logo mr-2">
-          </a>
-          <h1 class="font-weight-bold mt-3">BookUniverse</h1>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content-container">
+        <h2 class="website-logo">BookUniverse</h2>
+        <img src="./imagenes/logo.png" alt="Imagen logo">
+      </div>
+      <div class="footer-menus">
+        <div class="footer-content-container">
+          <span class="menu-title">company</span>
+          <a href="" class="menu-item-footer">Home</a>
+          <a href="about-us.html" class="menu-item-footer">About us</a>
+          <a href="" class="menu-item-footer">Work with us</a>
         </div>
-        <!-- menu -->
-        <ul class="col-md-2 list-unstyled menu">
-          <li class="font-weight-bold text-uppercase mb-2">Company</li>
-          <li><a href="index.html" class="text-reset">Home</a></li>
-          <li><a href="about-us.html" class="text-reset">About us</a></li>
-          <li><a href="#" class="text-reset">Work with us</a></li>
-        </ul>
-        <!-- menu -->
-        <ul class="col-md-2 list-unstyled menu">
-          <li class="font-weight-bold text-uppercase mb-2">Legal</li>
-          <li><a href="#" class="text-reset">Privacy Policy</a></li>
-          <li><a href="#" class="text-reset">Cookies</a></li>
-          <li><a href="#" class="text-reset">Legal Advice</a></li>
-        </ul>
-        <!-- redes sociales -->
-        <ul class="col-md-2 list-unstyled menu" >
-            <li class="font-weight-bold text-uppercase mb-2">Follow us</li>
-            <li class="d-flex ">
-              <a href="#" class="text-reset me-3">
-                <i class='bx bxl-facebook-circle' style='color:#313030'></i>
-              </a>
-              <a href="#" class="text-reset me-3">
-                <i class='bx bxl-twitter' style='color:#313030'  ></i>
-              </a>
-              <a href="#" class="text-reset me-3">
-                <i class='bx bxl-linkedin-square' style='color:#313030'  ></i>
-              </a>
-              <a href="#" class="text-reset me-3">
-                <i class='bx bxl-instagram-alt' style='color:#313030'  ></i>
-              </a>
-            </li>
-          </ul>
-      </nav>
+        <div class="footer-content-container">
+          <span class="menu-title">legal</span>
+          <a href="" class="menu-item-footer">Privacy Policy</a>
+          <a href="" class="menu-item-footer">Cookies</a>
+          <a href="" class="menu-item-footer">Legal Advice</a>
+        </div>
+      </div>
+
+      <div class="footer-content-container">
+        <span class="menu-title">follow us</span>
+        <div class="social-container">
+          <a href="#"
+            ><i class="bx bxl-facebook-circle" style="color: #313030"></i>
+          </a>
+          <a href="#"
+            ><i class="bx bxl-twitter" style="color: #313030"></i
+          ></a>
+          <a href="#"
+            ><i class="bx bxl-linkedin-square" style="color: #313030"></i
+          ></a>
+          <a href="#"
+            ><i class="bx bxl-instagram-alt" style="color: #313030"></i
+          ></a>
+        </div>
+      </div>
     </div>
     <div class="copyright-container">
-        <span class="copyright"
-          >Copyright 2023, BookUniverse. All rights reserved.</span
-        >
-      </div>
+      <span class="copyright"
+        >Copyright 2023, BookUniverse. All rights reserved.</span
+      >
+    </div>
   </footer>
 
     <!-- bootstrap -->

@@ -8,7 +8,7 @@
 body {
   color: #6a6f8c;
   background: #c8c8c8;
-  background: url("/imagenes/fondo_flores.jpg");
+  background: url("../imagenes/fondo_flores.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Open Sans", sans-serif;
@@ -16,7 +16,7 @@ body {
   min-width: 100vw;
 }
 
-/*HEADER*/
+
 
  /*HEADER*/
 
@@ -37,7 +37,7 @@ body {
 
 }
 
-.navbar-brand h1, footer h1 {
+.navbar-brand h2, footer h2 {
   color: #550d0e;
   font-size: 2rem;
   -webkit-box-sizing: border-box;
@@ -55,7 +55,7 @@ body {
   transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-h1:hover {
+h2:hover {
   text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1),
     0 0 30px rgba(255, 255, 255, 1), 0 0 40px #6fa78a, 0 0 70px #6fa78a,
     0 0 80px #6fa78a, 0 0 100px #6fa78a;
@@ -120,9 +120,10 @@ li:hover .btn {
   padding-top: 1.5em;
 }
 
-#central h1{
+#central h2{
   text-align: center;
   margin-bottom: 1em;
+  color: #4c606d;
 }
 
 #interior {
@@ -133,7 +134,7 @@ li:hover .btn {
   border-radius: 10px;
   text-align: center;
   max-width: 43.75rem;
-  color: #434347;
+  color: #4c606d;
 }
 
 #contenido{
@@ -158,6 +159,8 @@ p{
   line-height: 1.75;
   margin: 10px 20px;
   font-size: 18px;
+  padding-top: 10px;
+
 }
 
 .texto{
@@ -171,7 +174,7 @@ p{
 
 .citas{
   font-style: italic;
-  margin-top: 96px;
+  margin-top: 88px;
 }
 
 
@@ -202,7 +205,7 @@ p{
 
   #contenido img{
     float: none;
-    width: 40%;
+    width: 35%;
   }
 
   .citas{
@@ -212,7 +215,7 @@ p{
 
 
 
-/*Aquí debajo va el FOOTER*/
+/*FOOTER*/
 
 footer {
   position: relative;
@@ -346,18 +349,4 @@ footer .website-logo {
     align-items: flex-start;
     border-bottom: 1px solid #2a2a2a;
   }
-}
-
-
-@media (max-width: 600px) {
-/* reglas CSS para dispositivos pequeños */
-.group {
-  flex-direction: column;
-}
-label {
-  font-size: 0.9em;
-}
-.input {
-  width: 100%;
-}
 }
