@@ -1,21 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-  }
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
 
-  body {
-    color: #6a6f8c;
-    background: #c8c8c8;
-    background: url("/imagenes/fondo_flores.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    min-width: 100vh;
-    position: relative;
-  }
+body {
+  color: #6a6f8c;
+  background: #c8c8c8;
+  background: url("/imagenes/fondo_flores.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  min-width: 100vw;
+}
+
+/*HEADER*/
 
  /*HEADER*/
 
@@ -101,6 +102,7 @@ li:hover .btn {
   font-size: 16px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
+
   /* CONTENIDO */
 
   #central {
@@ -240,7 +242,7 @@ li:hover .btn {
 
   }
 
-  @media (max-width: 479px) {
+  @media (max-width: 500px) {
 
     .icon__menu{
       margin-left: 7rem;
@@ -252,9 +254,9 @@ li:hover .btn {
       padding-bottom: 1em;
     }
     #interior {
-      width: 81%;
-      height: 55vh;
-      margin-right: 61px;
+      width: 85%;
+      height: 62vh;
+      margin-right: 29px;
     }
 
     .datos-contacto {
