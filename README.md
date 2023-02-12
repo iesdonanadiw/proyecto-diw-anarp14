@@ -11,7 +11,7 @@
 BookUniverse es una comunidad donde los apasionados de la lectura pueden compartir sus opiniones y valoraciones sobre todos los libros que lean. Además, de recibir
 recomendaciones y de poder llevar un seguimiento de sus lecturas y las de otras personas. 
 
-Esta página web permite a los usuarios darse de alta y seleccionar libros para crear sus propias «estanterías digitales» en su perfil y listas de lecturas. También permite a sus miembros crear sus propios seguir a sus amigos.
+Esta página web permite a los usuarios darse de alta y seleccionar libros para crear sus propias «estanterías digitales» en su perfil y listas de lecturas. También permite a sus miembros seguir a sus amigos.
 
 En resumen, es una red social para lectores.
 
