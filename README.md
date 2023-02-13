@@ -16,7 +16,7 @@ Esta página web permite a los usuarios darse de alta y seleccionar libros para 
 En resumen, es una red social para lectores.
 
 ## PROTOTIPO<a name="id2"></a>
-https://www.figma.com/file/76sl40KEfs7Daveu0Jt044/Proyecto-DIW?node-id=0%3A1&t=Ju82sLCjTTNIeK1W-0
+https://www.figma.com/file/76sl40KEfs7Daveu0Jt044/Proyecto-DIW?node-id=54%3A2144&t=RQ7t0bXu4X2T1S7Z-1
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
 He realizado algunas modificaciones porque me ha parecido que quedaba mejor o me resultaba más fácil de adaptar a mi diseño.
