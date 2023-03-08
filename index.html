@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+  <head  profile="http://www.w3.org/2005/10/profile">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="icon" type="image/png" href="./imagenes/book.png">
+    <link rel="icon" type="image/ico" href="./imagenes/favicon.ico">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <link href="./css/index.css" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -17,12 +17,16 @@
   >
   </head>
   <body>
+    <audio autoplay>
+      <source src="./audio/bk-sound.mp3" type="audio/mpeg">
+    </audio>
+
     <div class="contenedor">
       <header>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
           <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="./imagenes/logo.png" alt="Logo de la marca" class="logo">
+            <img src="./imagenes/logotipo.png" alt="Logo de la marca" class="logo">
             <h2 class="nombre-empresa m-0 pl-3">BookUniverse</h2>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -112,10 +116,9 @@
           <button type="button" class="button">Update</button>
         </div>
 
-        <div id="calendar-container">
-          <h3 id="calendar-title">Upcoming Releases 2023</h3>
+        <section id="calendar-container">
           <img src="./imagenes/calendario.png" alt="calendario">
-        </div>
+        </section>
 
       <div id="derecha">
         <img src="./imagenes/decoracion-index.png" alt="foto libros">
@@ -126,7 +129,11 @@
       <div class="footer-container">
           <div class="footer-content-container">
               <h2 class="website-logo">BookUniverse</h2>
-              <img src="./imagenes/logo.png" alt="">
+
+              <details>
+                <summary>Logotipo animado</summary>
+                <img src="./video/logotipo.gif" alt="">
+              </details>
           </div>
           <div class="footer-menus">
               <div class="footer-content-container">

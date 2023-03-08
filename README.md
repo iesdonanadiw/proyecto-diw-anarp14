@@ -21,24 +21,6 @@ https://www.figma.com/file/76sl40KEfs7Daveu0Jt044/Proyecto-DIW?node-id=0%3A1&t=J
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
 He realizado algunas modificaciones porque me ha parecido que quedaba mejor o me resultaba más fácil de adaptar a mi diseño.
 
-MODIFICACIONES GENERALES:
-
-*En el figma no todas las páginas tenían el mismo fondo. A la hora de materializarlo me parecía que quedaba mejor todas las páginas iguales, ya que a mi parecer da la sensación de más homogeneidad.
-
-*Barra de navegación:
-He cambiado la disposición de los elementos porque me resultaba más fácil de hacer. Junto al nombre de la página he añadido un logotipo porque quedaba bien. El color rosa del fondo de la barra me parecía demasiado llamativo y he decido elegir un rosa palo más oscurito que le queda mejor con el fondo de la página.
-
-*Footer:
-He decido hacer un footer más completo que el que tenía en figma siguiendo el mismo estilo que la barra de navegación.
-
-* Fuente y paleta de color:
-
-La paleta de colores prácticamente no ha variado.
-La fuente si ha cambiado con respecto a figma simplemente porque al probarlo me ha gustado como ha quedado. ("Open Sans", sans-serif y la fuente que trae Bootstrap).
-
-*Imagenes:
-Algunas imagenes las he mantenido y otras las he tenido que cambiar para adaptarla al diseño.
-
 1. LOGIN - REGISTRAR
 
 He decidido combinar las páginas del login y de registrar en una sola porque me gustó mucho un diseño que encontré y lo adapte al estilo de mi página. Con este nuevo estilo y sin las imagenes que tenía en el figma me parecía que quedaba más formal y me resultaba más fácil de hacerlo responsive. El contenido esencial del cuestionario no cambia apenas.
@@ -49,7 +31,7 @@ Esta página está prácticamente igual a la página de figma. Solo he quitado e
 
 3. MY LIBRARY
 
--He cambiado el color de fondo de la tabla porque quedaba horrible (no se en que momento me pareció que esa tabla con el fondo rosa quedaba bien).
+-He cambiado el color de fondo de la tabla porque quedaba horrible.
 -El botón de busqueda avanzada también lo he quitado porque con el botón de busqueda normal me parecida suficiente.
 -La imagen que aparece en el figma también ha desaparecido porque quedaba bien sin ella y me facilitaba mucho el trabajo a la hora de luego hacerlo responsive.
 
@@ -59,20 +41,15 @@ En esta página también he prescindido de la misma foto que aparecía en la ant
 
 5. RECOMMENDATIONS
 
-Aquí he cambiado el diseño de los carruseles porque me gustaba como quedaba tal cual. He utilizado el diseño que proporciona Bootstrap.
+Aquí he cambiado el diseño de los carruseles porque me gustaba como quedaba tal cual.
 
 6. ABOUT US
 
-Practicamente igual que el figma. Solo he quitado una frase, la imagen y he cambido el color del titulo.
+Practicamente igual que el figma. Solo he quitado una frase.
 
 7. CONTACT US
 
-En esta página he cambiado el diseño de los input y del botón (el estilo es igual que el utilizado en el login). He utilizado una imagen distinta y he cambiado el color del titulo. 
-
-
-PÁGINAS EN LAS QUE SE UTILIZA BOOTSTRAP: 
-- about-us-fw.html
--recommendations.html
+En esta página solo he cambiado el diseño de los input y del botón. La imagen es otra tambien.
 
 ## RECURSOS<a name="id4"></a>
 [Listado de recursos usados]

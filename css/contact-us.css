@@ -18,10 +18,23 @@ body {
 
 /*HEADER*/
 
- /*HEADER*/
+/* definir la animación */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
- .logo{
-  width: 4em;
+.logo{
+  width: 70px;
+  margin-right: 10px;
+/* aplicar la animación */
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 .navbar, .footer {
@@ -138,6 +151,10 @@ li:hover .btn {
     border-radius: 5px;
     margin: 1.7rem 1.0625rem 1.5rem;
   }
+  #izquierda img:hover{
+    filter: grayscale(100%);
+  }
+
 
   #izquierda p{
     padding: 0.5rem;
