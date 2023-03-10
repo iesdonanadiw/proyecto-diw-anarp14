@@ -73,20 +73,20 @@ Para Mozilla Firefox, el navegador solicita permiso al usuario para reproducir e
 4. Transiciones
 
 Se encuentran situadas en:
--Menú
--La mayoría de los botones
--Footer (iconos de redes sociales, enlaces...)
--En la tablas ubicadas en community-friends.html y my_library.html (en las imagenes y propia tabla).
--En imagenes del index.
+- Menú
+- La mayoría de los botones
+- Footer (iconos de redes sociales, enlaces...)
+- En la tablas ubicadas en community-friends.html y my_library.html (en las imagenes y propia tabla).
+- En imagenes del index.
 
 He incorporado animaciones y transiciones en mi página web con el objetivo de mejorar la experiencia del usuario y hacerla más atractiva.
 
 5. Imágenes
--Se ha incluido el favicon creado en la cabecera de todas las páginas, sustituyendo el que ya tenía anteriormente.
--He sustituido el logo que tenía por el nuevo logo.
--Las etiquetas img han sido sustituidas por picture.
--Las imágenes que cree con la marca de agua se han añadido.
--Se ha añadido diferentes transiciones en las imagenes en varias páginas. (index, community-friends.html.html, my_library.html...). Se trata de transiciones sutiles para mejorar la apariencia y la experiencia de usuario sin distraer demasiado la atención.
+- Se ha incluido el favicon creado en la cabecera de todas las páginas, sustituyendo el que ya tenía anteriormente.
+- He sustituido el logo que tenía por el nuevo logo.
+- Las etiquetas img han sido sustituidas por picture.
+- Las imágenes que cree con la marca de agua se han añadido.
+- Se ha añadido diferentes transiciones en las imagenes en varias páginas. (index, community-friends.html.html, my_library.html...). Se trata de transiciones sutiles para mejorar la apariencia y la experiencia de usuario sin distraer demasiado la atención.
 
 
 
