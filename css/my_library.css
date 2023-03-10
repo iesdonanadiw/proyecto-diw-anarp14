@@ -12,13 +12,27 @@ body {
   background-size: cover;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  min-width: 100vw;
 }
 
  /*HEADER*/
 
- .logo{
-  width: 4em;
+/* definir la animación */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logo{
+  width: 4.375rem;
+  margin-right: 10px;
+/* aplicar la animación */
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 .navbar, .footer {
@@ -100,7 +114,6 @@ li:hover .btn {
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
-
   /* TABLA */
   .contenedor-tabla {
     background-color: #b8a5ab;
@@ -127,6 +140,12 @@ li:hover .btn {
 
 img{
   width: 5.625rem;
+}
+
+.tabla img:hover {
+  opacity: 0.8; /* disminuir la opacidad de la imagen al pasar el ratón por encima */
+  transform: scale(1.05); /* aumentar ligeramente el tamaño de la imagen */
+  transition: all 0.3s ease-in-out; /* crear una transición suave para los efectos */
 }
 
 .tabla {
@@ -308,7 +327,16 @@ input[type="radio"]:checked ~ label {
   color:#550D0E;
 }
 
-/*FOOTER*/
+@media screen and (max-width: 468px) {
+  #buscador input {
+    font-size: 14px;
+    padding: 7px 4px;
+    margin-bottom: 10px;
+  }
+}
+
+
+/*Aquí debajo va el FOOTER*/
 
 footer {
   position: relative;
@@ -327,7 +355,7 @@ footer {
 }
 
 .footer-content-container img {
-  height: 70px;
+  height: 112px;
   align-self: center;
 }
 
@@ -415,6 +443,33 @@ footer .website-logo {
   opacity: 0.7;
 }
 
+details {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer img {
+  max-width: 100%;
+  display: block;
+  margin: 10px auto;
+}
+
+.subscription__form input, .subscription__form button {
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.521);
+}
+.subscription__label label{
+  color: white;
+}
 /*MEDIA QUERY*/
 @media (max-width: 800px) {
   .footer-container {

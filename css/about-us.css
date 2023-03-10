@@ -8,20 +8,41 @@
 body {
   color: #6a6f8c;
   background: #c8c8c8;
-  background: url("../imagenes/fondo_flores.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  min-width: 100vw;
 }
 
+#video-background {
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -100;
+    filter: opacity(0.7);
+}
 
+/*HEADER*/
 
- /*HEADER*/
+/* definir la animación */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
- .logo{
-  width: 4em;
+.logo{
+  width: 4.375rem;
+  margin-right: 10px;
+/* aplicar la animación */
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 .navbar, .footer {
@@ -104,7 +125,6 @@ li:hover .btn {
 }
 
 
-
 /* CONTENIDO */
 
 #central {
@@ -177,6 +197,23 @@ p{
   margin-top: 88px;
 }
 
+details {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer img {
+  max-width: 100%;
+  display: block;
+  margin: 10px auto;
+}
 
 
 @media (max-width: 991px) {
@@ -213,9 +250,9 @@ p{
   }
 }
 
-
-
 /*FOOTER*/
+
+/*Aquí debajo va el FOOTER*/
 
 footer {
   position: relative;
@@ -234,7 +271,7 @@ footer {
 }
 
 .footer-content-container img {
-  height: 70px;
+  height: 112px;
   align-self: center;
 }
 
@@ -320,6 +357,31 @@ footer .website-logo {
 
 .social-container a:hover {
   opacity: 0.7;
+}
+
+details {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer img {
+  max-width: 100%;
+  display: block;
+  margin: 10px auto;
+}
+
+.subscription__form input, .subscription__form button {
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.521);
 }
 
 /*MEDIA QUERY*/

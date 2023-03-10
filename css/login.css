@@ -1,16 +1,31 @@
-body{
-	color:#6a6f8c;
-	background:#c8c8c8;
-	background:url("../imagenes/fondo_flores.jpg");
+body {
+	color: #6a6f8c;
+	background: #c8c8c8;
+	background: url("../imagenes/fondo_flores.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	font:600 16px/18px 'Open Sans',sans-serif;
+	font: 600 16px/18px 'Open Sans', sans-serif;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-}
+  }
 
+  .video-container {
+	margin-top: 20px;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+  video {
+	width: 498px;
+	height: 280px;
+	background-color: whitesmoke;
+	background-size: cover;
+	margin-bottom: 35px;
+	margin-left: 40px;
+  }
 
 h1{
 	font-weight: 400;
@@ -25,27 +40,28 @@ h1{
 .clearfix:after{clear:both;display:block}
 a{color:inherit;text-decoration:none}
 
-.container{
+.container {
 	display: flex;
-	width:100%;
+	margin-left: 15%;
+	width: 100%;
 	margin-top: 3.125rem;
 	margin-bottom: 3.125rem;
-	max-width:500px;
-	min-height:620px;
-	position:relative;
-	background:url("../imagenes/libro.jpg") no-repeat center;
-	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+	max-width: 500px;
+	min-height: 620px;
+	position: relative;
+	background: url("../imagenes/libro.jpg") no-repeat center;
+	box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+  }
 
-}
-.login-html{
-	width:100%;
-	height:100%;
-	position:absolute;
-	padding:0 70px 50px 70px;
-	background:rgba(211, 210, 211, 0.9);
+  .login-html {
+	width: 100%;
+	height: 103%;
+	position: absolute;
+	padding: 0 70px 50px 70px;
+	background: rgba(211, 210, 211, 0.9);
 	border-radius: 10px;
+  }
 
-}
 .login-html .sign-in-htm,
 .login-html .sign-up-htm{
 	top:0;
@@ -108,7 +124,7 @@ a{color:inherit;text-decoration:none}
 	color:rgb(121, 119, 119);
 	font-size:16px;
 }
-.login-form .group .button{
+.login-form .group .button, #btn-contacto{
 	background: linear-gradient(117.49deg, #36533b -81.04%, #6ebdb4 135.17%);
 	box-shadow: 8px 8px 60px rgba(60, 73, 92, 0.2);
 }
@@ -193,7 +209,60 @@ a{color:inherit;text-decoration:none}
 
 }
 
-/* MEDIAS QUERIES */
+#btn-contacto {
+	font-weight: bold;
+	background-color: #4c606d;
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+	border: none;
+  }
+
+  #dialogo-contacto {
+	background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    position: fixed;
+    top: 26%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+  }
+
+  #cerrar-dialogo {
+	background-color: #4c606d;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+	margin-top: 20px;
+  }
+
+  .foot-lnk a {
+	margin-right: 10px;
+  }
+
+  .foot-lnk button {
+	margin-left: 10px;
+  }
+
+
+
+/* MEDIAS QUERIES  */
+
+ @media (max-width:1217px){
+	video{
+		display: none;
+	}
+	.container{
+    top: 44%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+	}
+}
 
 @media (max-width: 768px) and (max-width: 1024px) {
 	.container {
@@ -209,7 +278,12 @@ a{color:inherit;text-decoration:none}
 	.login-form .group .label {
 	  font-size: 14px;
 	}
+
+	video{
+		display: none;
+	}
   }
+
 
   @media (max-width: 550px) {
 	.container {
@@ -242,6 +316,9 @@ a{color:inherit;text-decoration:none}
 	.login-form .group .label {
 	  font-size: 10px;
 	}
+	video{
+		display: none;
+	}
   }
 
   @media (max-width: 320px) {
@@ -258,5 +335,8 @@ a{color:inherit;text-decoration:none}
 	}
 	.login-form .group .label {
 	  font-size: 8px;
+	}
+	video{
+		display: none;
 	}
   }
