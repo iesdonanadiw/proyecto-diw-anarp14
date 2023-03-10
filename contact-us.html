@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact us</title>
-    <link rel="icon" type="image/png" href="./imagenes/book.png" />
+    <link rel="icon" type="image/ico" href="./imagenes/favicon.ico">
     <script
       src="https://kit.fontawesome.com/41bcea2ae3.js"
       crossorigin="anonymous"
@@ -23,16 +23,22 @@
     />
   </head>
   <body>
+    <audio autoplay loop>
+      <source src="./audio/bk-sound.mp3" type="audio/mp3">
+      <source src="./audios/bk-sound.ogg" type="audio/ogg" />
+      El navegador no soporta el audio.
+    </audio>
     <header>
       <!-- BARRA NAVEGACIÓN -->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand d-flex align-items-center" href="#">
-            <img
-              src="./imagenes/logotipo.png"
+            <picture
+            ><img
+              src="./imagenes/logotipo.svg"
               alt="Logo de la marca"
               class="logo"
-            />
+          /></picture>
             <h2 class="nombre-empresa m-0 pl-3">BookUniverse</h2>
           </a>
           <button
@@ -118,7 +124,7 @@
           </div>
         </div>
         <div id="izquierda">
-          <img src="./imagenes/contact.png" alt="Imagen contact-us" />
+          <picture><img src="./imagenes/contact.png" alt="Imagen contact-us" /></picture>
           <div class="datos-contacto">
             <p>
               <strong>Email:</strong> @BookUniverse@gmail.com <br>
@@ -135,12 +141,20 @@
       <div class="footer-container">
         <div class="footer-content-container">
           <h2 class="website-logo">BookUniverse</h2>
-          <img src="./imagenes/logotipo.png" alt="Imagen logo" />
+          <details class="subscription">
+            <summary class="subscription__title">Subscribe to our Newsletter</summary>
+            <form action="TU_URL_DE_FORMULARIO" method="POST" class="subscription__form">
+              <label for="email" class="subscription__label">Email:</label>
+              <input type="email" name="email" required class="subscription__input">
+              <button type="submit" class="subscription__button">Subscribe</button>
+            </form>
+            <picture><img src="./video/logotipo.gif" alt="" /></picture>
+          </details>
         </div>
         <div class="footer-menus">
           <div class="footer-content-container">
             <span class="menu-title">company</span>
-            <a href="" class="menu-item-footer">Home</a>
+            <a href="index.html" class="menu-item-footer">Home</a>
             <a href="about-us.html" class="menu-item-footer">About us</a>
             <a href="" class="menu-item-footer">Work with us</a>
           </div>

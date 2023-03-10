@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My library</title>
-    <link rel="icon" type="image/png" href="./imagenes/book.png">
+    <link rel="icon" type="image/ico" href="./imagenes/favicon.ico">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/my_library.css">
@@ -18,12 +18,22 @@
     >
   </head>
   <body>
+    <audio autoplay loop>
+      <source src="./audio/bk-sound.mp3" type="audio/mp3">
+      <source src="./audios/bk-sound.ogg" type="audio/ogg" />
+      El navegador no soporta el audio.
+    </audio>
     <header>
       <!-- BARRA NAVEGACIÓN -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="./imagenes/logotipo.png" alt="Logo de la marca" class="logo">
+        <picture
+                ><img
+                  src="./imagenes/logotipo.svg"
+                  alt="Logo de la marca"
+                  class="logo"
+              /></picture>
         <h2 class="nombre-empresa m-0 pl-3">BookUniverse</h2>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -89,7 +99,7 @@
         </thead>
         <tbody>
           <tr>
-            <td data-label="portada"><img src="./imagenes/trono-cristal.jpg" alt="Trono de cristal"></td>
+            <td data-label="portada"><picture><img src="./imagenes/proyecto-2-sm.jpeg" alt="Trono de cristal"></picture></td>
             <td data-label="titulo">Trono de cristal</td>
             <td data-label="autor">Sarah J. Maas</td>
             <td data-label="puntuacion">
@@ -117,7 +127,7 @@
             </td>
           </tr>
           <tr>
-            <td data-label="portada"><img src="./imagenes/los-7-maridos.jpg" alt="Los 7 maridos de Evelynn Hugo"></td>
+            <td data-label="portada"><picture><img src="./imagenes/los-7-maridos.jpg" alt="Los 7 maridos de Evelynn Hugo"></picture></td>
             <td data-label="titulo">Los siete maridos de Evelyn Hugo</td>
             <td data-label="autor">Taylor Jenkins Reid</td>
             <td data-label="puntuacion">
@@ -145,7 +155,7 @@
             </td>
           </tr>
           <tr>
-            <td data-label="portada"><img src="./imagenes/la-paciente-silenciosa.jpg" alt="La paciente silenciosa"></td>
+            <td data-label="portada"><picture><img src="./imagenes/la-paciente-silenciosa.jpg" alt="La paciente silenciosa"></picture></td>
             <td data-label="titulo">La paciente silenciosa</td>
             <td data-label="autor">Alex Michaelides</td>
             <td data-label="Puntuación">
@@ -180,12 +190,20 @@
     <div class="footer-container">
       <div class="footer-content-container">
         <h2 class="website-logo">BookUniverse</h2>
-        <img src="./imagenes/logotipo.png" alt="Imagen logo">
+        <details class="subscription">
+          <summary class="subscription__title">Subscribe to our Newsletter</summary>
+          <form action="TU_URL_DE_FORMULARIO" method="POST" class="subscription__form">
+            <label for="email" class="subscription__label">Email:</label>
+            <input type="email" name="email" required class="subscription__input">
+            <button type="submit" class="subscription__button">Subscribe</button>
+          </form>
+          <picture><img src="./video/logotipo.gif" alt="" /></picture>
+        </details>
       </div>
       <div class="footer-menus">
         <div class="footer-content-container">
           <span class="menu-title">company</span>
-          <a href="" class="menu-item-footer">Home</a>
+          <a href="index.html" class="menu-item-footer">Home</a>
           <a href="about-us.html" class="menu-item-footer">About us</a>
           <a href="" class="menu-item-footer">Work with us</a>
         </div>

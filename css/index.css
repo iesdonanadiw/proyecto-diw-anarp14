@@ -13,15 +13,17 @@ body {
   background-size: cover;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  min-width: 100vw;
 }
 
 /*HEADER*/
 
  .logo{
-    width: 70px;
-    margin-right: 10px;
-    opacity: 0;
+  width: 4.375rem;
+  margin-right: 10px;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 /* definir la animación */
@@ -32,13 +34,6 @@ body {
   to {
     opacity: 1;
   }
-}
-
-/* aplicar la animación */
-.logo {
-  animation-name: fade-in;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
 }
 
 .navbar, .footer {
@@ -182,12 +177,6 @@ h3 {
   margin-bottom: 1.25rem;
 }
 
-.interior .titulo img {
-  width: 20%;
-  margin-top: 5px;
-  margin-right: 5px;
-}
-
 .interior img:hover {
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
 }
@@ -211,7 +200,7 @@ h3 {
 }
 
 .interior .libro img {
-  width:28%;
+  width:12.5rem;
   margin-left: auto;
   border-radius: 3px;
   margin-right: 10px;
@@ -315,6 +304,7 @@ h3 {
 
 #derecha img{
   border-radius: 10px;
+  width: 77%;
 }
 
 #derecha img:hover{
@@ -351,69 +341,25 @@ h3 {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-details {
-  margin: 20px 0;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
 
-summary {
-  font-weight: bold;
-  cursor: pointer;
-}
-
-footer img {
-  max-width: 100%;
-  display: block;
-  margin: 10px auto;
-}
-
-/*
 @media (max-width: 1024px) {
   #central {
     width: 55%;
     margin-right: 5%;
   }
-  .interior {
-    width: 90%;
-    font-size: 13px;
+  #izquierda{
+    width: 28%;
   }
-  .interior .libro img {
-    width:30%;
-  }
-  #izquierda {
-    width: 26%;
-    height: 45%;
-    font-size: 18px;
-    margin-top: -23%;
-    margin-bottom: 7%;
-  }
-
-  .descripcion img{
-    width: 33%;
-  }
-  .barra-progreso {
-    width: 75%;
-  }
-  #calendar-container {
-    height: 39%;
-    width: 27%;
-
-  }
-  #calendar-title{
-    font-size: 18px;
-    margin-top: -8px;
-  }
-
-  #calendar-container img{
-    width: 100%;
-  }
-
   #derecha {
-display: none;
+  display: none;
   }
-} */
+}
+
+@media only screen and (min-width: 1600px){
+  #calendar-container img {
+  margin-top: -15%;
+  }
+}
 
 @media only screen and (max-width: 700px) {
   /* agrega aquí tus estilos para dispositivos móviles */
@@ -434,7 +380,7 @@ display: none;
   #izquierda {
     width: 55%;
     height: 29%;
-    margin-top: -55em;
+    margin-top: -61em;
   }
   #izquierda img {
     width: 40%;
@@ -451,6 +397,7 @@ display: none;
     width: 60%;
     margin-left: 5%;
     font-size: 13px;
+    margin: auto;
 
   }
   #calendar-container {
@@ -482,7 +429,7 @@ display: none;
     left: 12%;
     top: 28%;
     height: 14em;
-    margin-top: -60rem;
+    margin-top: -54rem;
 }
 #central{
   margin-top: 81%;
@@ -594,6 +541,31 @@ footer .website-logo {
 
 .social-container a:hover {
   opacity: 0.7;
+}
+
+details {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer img {
+  max-width: 100%;
+  display: block;
+  margin: 10px auto;
+}
+
+.subscription__form input, .subscription__form button {
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.521);
 }
 
 /*MEDIA QUERY*/

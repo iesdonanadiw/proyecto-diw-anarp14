@@ -1,7 +1,7 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9712744&assignment_repo_type=AssignmentRepo)
 # Proyecto DIW - DWECL
 
-## ÍNDICE   
+## ÍNDICE
 1. [DESCRIPCIÓN](#id1)
 2. [PROTOTIPO](#id2)
 3. [MODIFICACIONES A LA GUÍA DE ESTILOS](#id3)
@@ -9,7 +9,7 @@
 
 ## DESCRIPCIÓN<a name="id1"></a>
 BookUniverse es una comunidad donde los apasionados de la lectura pueden compartir sus opiniones y valoraciones sobre todos los libros que lean. Además, de recibir
-recomendaciones y de poder llevar un seguimiento de sus lecturas y las de otras personas. 
+recomendaciones y de poder llevar un seguimiento de sus lecturas y las de otras personas.
 
 Esta página web permite a los usuarios darse de alta y seleccionar libros para crear sus propias «estanterías digitales» en su perfil y listas de lecturas. También permite a sus miembros seguir a sus amigos.
 
@@ -50,6 +50,46 @@ Practicamente igual que el figma. Solo he quitado una frase.
 7. CONTACT US
 
 En esta página solo he cambiado el diseño de los input y del botón. La imagen es otra tambien.
+
+## ENTREGA 4<a name="id5"></a>
+
+1. Elementos interactivos:
+
+En el Footer he añadido el elemento "details" con el gif de mi logo.
+El elemento "dialog" lo he añadido en la página login.html, aparece cuando se pulsa por el botón "Suport".
+
+2. Video:
+
+Los dos videos de testimos que he creado los he situado en la página del login. El video de fondo está en about us.
+
+Para mantener el diseño responsivo al bajar de los 1217px se quitan los dos videos de testimonios del login.
+
+3. Audio
+
+En Google Chrome, por defecto, se bloquea la reproducción automática de audio y video sin interacción previa del usuario. Si se desea permitir la reproducción automática de audio y video en un sitio web en particular, se puede agregar la URL del sitio web en la configuración de "Contenido no seguro" en Chrome.
+
+Para Mozilla Firefox, el navegador solicita permiso al usuario para reproducir el audio y video en la página web. En este caso, se debe otorgar permiso para que se reproduzca el audio y video.
+
+4. Transiciones
+
+Se encuentran situadas en:
+-Menú
+-La mayoría de los botones
+-Footer (iconos de redes sociales, enlaces...)
+-En la tablas ubicadas en community-friends.html y my_library.html (en las imagenes y propia tabla).
+-En imagenes del index.
+
+He incorporado animaciones y transiciones en mi página web con el objetivo de mejorar la experiencia del usuario y hacerla más atractiva.
+
+5. Imágenes
+-Se ha incluido el favicon creado en la cabecera de todas las páginas, sustituyendo el que ya tenía anteriormente.
+-He sustituido el logo que tenía por el nuevo logo.
+-Las etiquetas img han sido sustituidas por picture.
+-Las imágenes que cree con la marca de agua se han añadido.
+-Se ha añadido diferentes transiciones en las imagenes en varias páginas. (index, community-friends.html.html, my_library.html...). Se trata de transiciones sutiles para mejorar la apariencia y la experiencia de usuario sin distraer demasiado la atención.
+
+
+
 
 ## RECURSOS<a name="id4"></a>
 [Listado de recursos usados]

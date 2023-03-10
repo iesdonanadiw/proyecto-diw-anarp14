@@ -1,174 +1,251 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head  profile="http://www.w3.org/2005/10/profile">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
-    <link rel="icon" type="image/ico" href="./imagenes/favicon.ico">
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-    <link href="./css/index.css" rel="stylesheet" type="text/css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="./imagenes/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/41bcea2ae3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="./css/index.css" rel="stylesheet" type="text/css" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-    crossorigin="anonymous"
-  >
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <audio autoplay>
-      <source src="./audio/bk-sound.mp3" type="audio/mpeg">
+    <audio autoplay loop>
+      <source src="./audio/bk-sound.mp3" type="audio/mp3" />
+      <source src="./audios/bk-sound.ogg" type="audio/ogg" />
+      El navegador no soporta el audio.
     </audio>
 
     <div class="contenedor">
       <header>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="./imagenes/logotipo.png" alt="Logo de la marca" class="logo">
-            <h2 class="nombre-empresa m-0 pl-3">BookUniverse</h2>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav ">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="my_library.html">My Library</a>
-              </li>
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+              <picture
+                ><img
+                  src="./imagenes/logotipo.svg"
+                  alt="Logo de la marca"
+                  class="logo"
+              /></picture>
+              <h2 class="nombre-empresa m-0 pl-3">BookUniverse</h2>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="my_library.html">My Library</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                     Community
-                </a>
-                <ul class="dropdown-menu border-0">
-                    <li><a class="dropdown-item" href="community-friends.html">Friends and Followers</a></li>
-                    <li><a class="dropdown-item" href="recommendations.html">Recommendations</a></li>
-                </ul>
-            </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about-us.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact-us.html">Contact us</a>
-              </li>
-              <li class="nav-item">
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li>
+                      <a class="dropdown-item" href="community-friends.html"
+                        >Friends and Followers</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="recommendations.html"
+                        >Recommendations</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact-us.html">Contact us</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link btn" href="login.html">Sign in/Sign up</a>
-              </li>
-            </ul>
-          </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>
 
-    <main>
-      <div id="buscador">
-        <form>
-          <input type="search" placeholder="Buscar" size="40">
-          <button type="submit">Let's go</button>
-        </form>
-      </div>
-      <div id="central">
-        <h3>Updates</h3>
-        <div class="interior">
-          <div class="titulo">
-          <img src="./imagenes/usuario1.png" alt="Perfil usuario" >
-          <div class="titular">
-            <strong>Ana's Blog</strong> made progress on
-            <p style="text-decoration: underline;">El lunes nos querrán - Najat El Hachmi.</p>
+      <main>
+        <div id="buscador">
+          <form>
+            <input type="search" placeholder="Buscar" size="40" />
+            <button type="submit">Let's go</button>
+          </form>
+        </div>
+        <div id="central">
+          <h3>Updates</h3>
+          <div class="interior">
+            <div class="titulo">
+                  <picture><img src="./imagenes/usuario1.png" alt="Perfil usuario" /></picture>
+              <div class="titular">
+                <strong>Ana's Blog</strong> made progress on
+                <p style="text-decoration: underline">
+                  El lunes nos querrán - Najat El Hachmi.
+                </p>
+              </div>
+            </div>
+            <div class="libro">
+              <button type="submit">Want to read</button> <br />
+              <p class="descripcion">
+                Cuenta la historia de una joven de diecisiete años que desea
+                encontrar la libertad para descubrir qué es lo que la hará
+                feliz.«Entonces no lo sabíamos, pero estábamos conquistando
+                territorios nuevos impensables para nuestras madres y ni
+                siquiera nos dábamos cuenta.»
+                <picture><img src="./imagenes/libro3.jpg" alt="El lunes nos querrán" /></picture>
+              </p>
+              <div class="enlaces">
+                <a href="#">Like</a> <a href="#">Comment</a>
+              </div>
+            </div>
           </div>
+          <div class="interior">
+            <div class="titulo">
+              <picture><img src="./imagenes/usuario2.png" alt="Perfil usuario" /></picture>
+              <div class="titular">
+                <strong>Pepito</strong> rated a book
+                <picture
+                  ><img
+                    src="./imagenes/puntuacion.png"
+                    alt="Puntuación lectura"
+                /></picture>
+                <p style="text-decoration: underline">
+                  Note to self - Connor Franta.
+                </p>
+              </div>
+            </div>
+            <div class="libro">
+              <button type="submit">Want to read</button> <br />
+              <p class="descripcion">
+                In his New York Times bestselling memoir, A Work in Progress,
+                Connor Franta shared his journey from small-town Midwestern boy
+                to full-fledged Internet sensation...
 
-          </div>
-          <div class="libro">
-            <button type="submit">Want to read</button> <br>
-            <p class="descripcion">Cuenta la historia de una joven de diecisiete años que desea encontrar la libertad para descubrir qué es lo que la hará feliz.«Entonces no lo sabíamos, pero estábamos conquistando territorios nuevos impensables para nuestras madres y ni siquiera nos dábamos cuenta.»
-              <img src="./imagenes/libro3.jpg" alt="El lunes nos querrán" ></p>
-            <div class="enlaces">
-            <a href="#">Like</a> <a href="#">Comment</a>
+                <picture><img src="./imagenes/libro4.jpg" alt="Note to self"></picture>
+              </p>
+              <div class="enlaces">
+                <a href="#">Like</a> <a href="#">Comment</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="interior">
-          <div class="titulo">
-            <img src="./imagenes/usuario2.png" alt="Perfil usuario" ><div class="titular"><strong>Pepito</strong> rated a book <img src="./imagenes/puntuacion.png" alt="Puntuación lectura"> <p style="text-decoration: underline;">Note to self - Connor Franta.</p></div>
-          </div>
-          <div class="libro">
-            <button type="submit">Want to read</button> <br>
-            <p class="descripcion">In his New York Times bestselling memoir, A Work in Progress, Connor Franta shared his journey from small-town Midwestern boy to full-fledged Internet sensation... <img src="./imagenes/libro4.jpg" alt="Note to self" ></p>
-            <div class="enlaces">
-            <a href="#">Like</a>  <a href="#">Comment</a>
-            </div>
-          </div>
-        </div>
-      </div>
         <div id="izquierda">
           <h3>Currendly reading</h3>
-          <img src="./imagenes/dune.jpg" alt="Imagen">
+          <picture><img src="./imagenes/dune.jpg" alt="Imagen" /></picture>
           <div class="barra-progreso">
-            <div class="valor-barra" style="width: 75%;">75%</div>
+            <div class="valor-barra" style="width: 75%">75%</div>
           </div>
           <button type="button" class="button">Update</button>
         </div>
 
         <section id="calendar-container">
-          <img src="./imagenes/calendario.png" alt="calendario">
+          <picture
+            ><img src="./imagenes/calendario.png" alt="calendario"
+          /></picture>
         </section>
 
-      <div id="derecha">
-        <img src="./imagenes/decoracion-index.png" alt="foto libros">
-      </div>
-    </main>
+        <div id="derecha">
+          <picture
+            ><img src="./imagenes/proyecto-3-sm.jpeg" alt="foto libros"
+          /></picture>
+        </div>
+      </main>
 
-    <footer>
-      <div class="footer-container">
+      <footer>
+        <div class="footer-container">
           <div class="footer-content-container">
-              <h2 class="website-logo">BookUniverse</h2>
-
-              <details>
-                <summary>Logotipo animado</summary>
-                <img src="./video/logotipo.gif" alt="">
-              </details>
+            <h2 class="website-logo">BookUniverse</h2>
+            <details class="subscription">
+              <summary class="subscription__title">Subscribe to our Newsletter</summary>
+              <form action="TU_URL_DE_FORMULARIO" method="POST" class="subscription__form">
+                <label for="email" class="subscription__label">Email:</label>
+                <input type="email" name="email" required class="subscription__input">
+                <button type="submit" class="subscription__button">Subscribe</button>
+              </form>
+              <picture><img src="./video/logotipo.gif" alt="" /></picture>
+            </details>
           </div>
           <div class="footer-menus">
-              <div class="footer-content-container">
-                  <span class="menu-title">company</span>
-                  <a href="index.html" class="menu-item-footer">Home</a>
-                  <a href="about-us.html" class="menu-item-footer">About us</a>
-                  <a href="" class="menu-item-footer">Work with us</a>
-              </div>
-              <div class="footer-content-container">
-                  <span class="menu-title">legal</span>
-                  <a href="" class="menu-item-footer">Privacy Policy</a>
-                  <a href="" class="menu-item-footer">Cookies</a>
-                  <a href="" class="menu-item-footer">Legal Advice</a>
-              </div>
+            <div class="footer-content-container">
+              <span class="menu-title">company</span>
+              <a href="index.html" class="menu-item-footer">Home</a>
+              <a href="about-us.html" class="menu-item-footer">About us</a>
+              <a href="" class="menu-item-footer">Work with us</a>
+            </div>
+            <div class="footer-content-container">
+              <span class="menu-title">legal</span>
+              <a href="" class="menu-item-footer">Privacy Policy</a>
+              <a href="" class="menu-item-footer">Cookies</a>
+              <a href="" class="menu-item-footer">Legal Advice</a>
+            </div>
           </div>
 
           <div class="footer-content-container">
-              <span class="menu-title">follow us</span>
-              <div class="social-container">
-                <a href="#"><i class='bx bxl-facebook-circle' style='color:#313030'></i> </a>
-                <a href="#"><i class='bx bxl-twitter' style='color:#313030'  ></i></a>
-                <a href="#"><i class='bx bxl-linkedin-square' style='color:#313030'  ></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt' style='color:#313030'  ></i></a>
-              </div>
+            <span class="menu-title">follow us</span>
+            <div class="social-container">
+              <a href="#"
+                ><i class="bx bxl-facebook-circle" style="color: #313030"></i>
+              </a>
+              <a href="#"
+                ><i class="bx bxl-twitter" style="color: #313030"></i
+              ></a>
+              <a href="#"
+                ><i class="bx bxl-linkedin-square" style="color: #313030"></i
+              ></a>
+              <a href="#"
+                ><i class="bx bxl-instagram-alt" style="color: #313030"></i
+              ></a>
+            </div>
           </div>
-      </div>
-      <div class="copyright-container">
-          <span class="copyright">Copyright 2023, BookUniverse. All rights reserved.</span>
-      </div>
-    </footer>
-</div>
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-crossorigin="anonymous"
-></script>
+        </div>
+        <div class="copyright-container">
+          <span class="copyright"
+            >Copyright 2023, BookUniverse. All rights reserved.</span
+          >
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
